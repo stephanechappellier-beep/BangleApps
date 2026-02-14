@@ -25,3 +25,4 @@
 0.20: Fix date/day display (reduce sizes to fit screen)
 0.21: Move date higher (y+40), increase day size (12x20 x2)
 0.21: Move date higher (y+38), increase day font to x3
+0.22: Back to Anton original layout (6x8 x2) slightly lower (y+52)
