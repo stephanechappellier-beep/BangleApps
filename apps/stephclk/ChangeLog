@@ -20,3 +20,4 @@
 0.15: Increase date and day font size to x5
 0.16: Reduce date/day font to x4 (better readability)
 0.17: Use 12x20 font (bolder) for date and day
+0.18: Split date (6x8 size 3) and day (12x20 size 2 bold)
