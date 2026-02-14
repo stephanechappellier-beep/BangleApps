@@ -16,9 +16,11 @@ let draw = function() {
   var date = new Date();
   var timeStr = require("locale").time(date, 1); // Hour and minute
   g.setFontAlign(0, 0).setFont("Anton").drawString(timeStr, x, y);
-  // Show date and day of week
-  var dateStr = require("locale").date(date, 0).toUpperCase()+"\n"+
-                require("locale").dow(date, 0).toUpperCase();
+
+  // Show date and day of week in French
+  var mois = ["JAN","FÉV","MAR","AVR","MAI","JUN","JUL","AOÛ","SEP","OCT","NOV","DÉC"];
+  var jours = ["DIMANCHE","LUNDI","MARDI","MERCREDI","JEUDI","VENDREDI","SAMEDI"];
+  var dateStr = date.getDate()+" "+mois[date.getMonth()]+" "+date.getFullYear()+"\n"+jours[date.getDay()];
   g.setFontAlign(0, 0).setFont("6x8", 2).drawString(dateStr, x, y+48);
 
   // queue next draw
