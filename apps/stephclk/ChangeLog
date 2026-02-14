@@ -17,3 +17,4 @@
 0.12: Pass in `redraw` to allow `Bangle.uiRedraw()` to redraw the clock
 0.13: Force French date and day names (Steph Clock custom version)
 0.14: Increase date and day font size
+0.15: Increase date and day font size to x5
