@@ -29,3 +29,4 @@
 0.23: Use Anton font for date and day (smaller scale -2)
 0.24: Revert to 6x8 font (Anton scale not working)
 0.24: Use Anton font for date/day with scale 0
+0.25: Final - 6x8 font (Anton incomplete charset)
