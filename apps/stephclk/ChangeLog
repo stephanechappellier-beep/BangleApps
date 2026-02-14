@@ -23,3 +23,5 @@
 0.18: Split date (6x8 size 3) and day (12x20 size 2 bold)
 0.19: Move date and day lower for better spacing
 0.20: Fix date/day display (reduce sizes to fit screen)
+0.21: Move date higher (y+40), increase day size (12x20 x2)
+0.21: Move date higher (y+38), increase day font to x3

@@ -20,11 +20,11 @@ let draw = function() {
   // Show date and day of week in French
   var mois = ["JAN","FEV","MAR","AVR","MAI","JUN","JUL","AOU","SEP","OCT","NOV","DEC"];
   var jours = ["DIMANCHE","LUNDI","MARDI","MERCREDI","JEUDI","VENDREDI","SAMEDI"];
-  // Date with original size
+  // Date higher up
   var dateStr = date.getDate()+" "+mois[date.getMonth()]+" "+date.getFullYear();
-  g.setFontAlign(0, 0).setFont("6x8", 2).drawString(dateStr, x, y+48);
-  // Day of week with bold font (slightly lower)
-  g.setFontAlign(0, 0).setFont("12x20", 1).drawString(jours[date.getDay()], x, y+65);
+  g.setFontAlign(0, 0).setFont("6x8", 2).drawString(dateStr, x, y+38);
+  // Day of week - keep same position but make it bigger
+  g.setFontAlign(0, 0).setFont("12x20", 3).drawString(jours[date.getDay()], x, y+65);
 
   // queue next draw
   if (drawTimeout) clearTimeout(drawTimeout);
