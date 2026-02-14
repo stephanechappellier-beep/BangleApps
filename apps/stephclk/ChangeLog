@@ -34,3 +34,4 @@
 0.27: Increase Righteous font size (2x) and move day lower
 0.28: Date normal size (1x), day stays large (2x)
 0.29: Move date higher (y+45 instead of y+52)
+0.30: Move time up (y-15), enlarge date (2x) without year, move date up (y+35)

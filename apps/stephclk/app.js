@@ -25,14 +25,14 @@ let draw = function() {
   g.reset().clearRect(Bangle.appRect); // clear whole background (w/o widgets)
   var date = new Date();
   var timeStr = require("locale").time(date, 1); // Hour and minute
-  g.setFontAlign(0, 0).setFont("Anton").drawString(timeStr, x, y);
+  g.setFontAlign(0, 0).setFont("Anton").drawString(timeStr, x, y-15);
 
   // Show date and day of week in French (Righteous font - bold with full charset)
   var mois = ["JAN","FEV","MAR","AVR","MAI","JUN","JUL","AOU","SEP","OCT","NOV","DEC"];
   var jours = ["DIMANCHE","LUNDI","MARDI","MERCREDI","JEUDI","VENDREDI","SAMEDI"];
-  var dateStr = date.getDate()+" "+mois[date.getMonth()]+" "+date.getFullYear();
+  var dateStr = date.getDate()+" "+mois[date.getMonth()];
   var jourStr = jours[date.getDay()];
-  g.setFontAlign(0, 0).setFont("Righteous").drawString(dateStr, x, y+45);
+  g.setFontAlign(0, 0).setFont("Righteous", 2).drawString(dateStr, x, y+35);
   g.setFont("Righteous", 2).drawString(jourStr, x, y+75);
 
   // queue next draw
