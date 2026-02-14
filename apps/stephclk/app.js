@@ -32,7 +32,7 @@ let draw = function() {
   var jours = ["DIMANCHE","LUNDI","MARDI","MERCREDI","JEUDI","VENDREDI","SAMEDI"];
   var dateStr = date.getDate()+" "+mois[date.getMonth()]+" "+date.getFullYear();
   var jourStr = jours[date.getDay()];
-  g.setFontAlign(0, 0).setFont("Righteous").drawString(dateStr, x, y+52);
+  g.setFontAlign(0, 0).setFont("Righteous").drawString(dateStr, x, y+45);
   g.setFont("Righteous", 2).drawString(jourStr, x, y+75);
 
   // queue next draw
