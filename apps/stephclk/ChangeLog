@@ -27,3 +27,5 @@
 0.21: Move date higher (y+38), increase day font to x3
 0.22: Back to Anton original layout (6x8 x2) slightly lower (y+52)
 0.23: Use Anton font for date and day (smaller scale -2)
+0.24: Revert to 6x8 font (Anton scale not working)
+0.24: Use Anton font for date/day with scale 0
