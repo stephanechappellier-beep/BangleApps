@@ -18,7 +18,7 @@ let draw = function() {
   g.setFontAlign(0, 0).setFont("Anton").drawString(timeStr, x, y);
 
   // Show date and day of week in French
-  var mois = ["JAN","FÉV","MAR","AVR","MAI","JUN","JUL","AOÛ","SEP","OCT","NOV","DÉC"];
+  var mois = ["JAN","FEV","MAR","AVR","MAI","JUN","JUL","AOU","SEP","OCT","NOV","DEC"];
   var jours = ["DIMANCHE","LUNDI","MARDI","MERCREDI","JEUDI","VENDREDI","SAMEDI"];
   var dateStr = date.getDate()+" "+mois[date.getMonth()]+" "+date.getFullYear()+"\n"+jours[date.getDay()];
   g.setFontAlign(0, 0).setFont("6x8", 2).drawString(dateStr, x, y+48);
