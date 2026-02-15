@@ -1,8 +1,8 @@
 {
   "id": "stephclk",
   "name": "Steph Clock",
-  "version": "0.30",
-  "description": "A simple clock using the bold Anton font. See `Steph Clock Plus` for an enhanced version",
+  "version": "0.31",
+  "description": "A simple clock using the bold Anton font with Berulle church background image. Upload berulle.img to Storage to display background.",
   "icon": "app.png",
   "screenshots": [{"url":"screenshot.png"}],
   "type": "clock",
@@ -11,6 +11,7 @@
   "allow_emulator": true,
   "storage": [
     {"name":"stephclk.app.js","url":"app.js"},
-    {"name":"stephclk.img","url":"app-icon.js","evaluate":true}
+    {"name":"stephclk.img","url":"app-icon.js","evaluate":true},
+    {"name":"berulle.img","url":"berulle.img"}
   ]
 }
