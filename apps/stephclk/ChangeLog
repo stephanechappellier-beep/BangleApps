@@ -40,3 +40,4 @@
 0.33: Fix berulle.img format - proper 8-bit binary (31KB instead of 190KB)
 0.34: Improve berulle.img colors - cyan sky instead of purple, better saturation
 0.35: Replace with AI-generated stylized Berulle image - flat colors, better for 8-bit palette
+0.36: Fix image format - use correct Web Safe 216 palette (0-215 indices, no VGA colors)
