@@ -1,7 +1,7 @@
 {
   "id": "stephclk",
   "name": "Steph Clock",
-  "version": "0.31",
+  "version": "0.32",
   "description": "A simple clock using the bold Anton font with Berulle church background image. Upload berulle.img to Storage to display background.",
   "icon": "app.png",
   "screenshots": [{"url":"screenshot.png"}],

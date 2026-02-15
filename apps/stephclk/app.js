@@ -34,24 +34,15 @@ let draw = function() {
 
   var date = new Date();
   var timeStr = require("locale").time(date, 1); // Hour and minute
-
-  // Draw time with background for better readability
-  g.setColor("#000").fillRect(x-70, y-40, x+70, y+10); // semi-transparent background
-  g.setColor("#fff").setFontAlign(0, 0).setFont("Anton").drawString(timeStr, x, y-15);
+  g.setFontAlign(0, 0).setFont("Anton").drawString(timeStr, x, y-15);
 
   // Show date and day of week in French (Righteous font - bold with full charset)
   var mois = ["JAN","FEV","MAR","AVR","MAI","JUN","JUL","AOU","SEP","OCT","NOV","DEC"];
   var jours = ["DIMANCHE","LUNDI","MARDI","MERCREDI","JEUDI","VENDREDI","SAMEDI"];
   var dateStr = date.getDate()+" "+mois[date.getMonth()];
   var jourStr = jours[date.getDay()];
-
-  // Draw date with background
-  g.setColor("#000").fillRect(x-60, y+20, x+60, y+50);
-  g.setColor("#fff").setFontAlign(0, 0).setFont("Righteous", 2).drawString(dateStr, x, y+35);
-
-  // Draw day with background
-  g.setColor("#000").fillRect(x-80, y+60, x+80, y+90);
-  g.setColor("#fff").setFont("Righteous", 2).drawString(jourStr, x, y+75);
+  g.setFontAlign(0, 0).setFont("Righteous", 2).drawString(dateStr, x, y+35);
+  g.setFont("Righteous", 2).drawString(jourStr, x, y+75);
 
   // queue next draw
   if (drawTimeout) clearTimeout(drawTimeout);
