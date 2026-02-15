@@ -38,3 +38,4 @@
 0.31: Add Berulle church background image (176x176 RGB565), black rectangles behind text for readability
 0.32: Remove black rectangles - text directly on background image
 0.33: Fix berulle.img format - proper 8-bit binary (31KB instead of 190KB)
+0.34: Improve berulle.img colors - cyan sky instead of purple, better saturation
